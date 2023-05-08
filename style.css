@@ -1,0 +1,101 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+     min-height: 120vh;
+     background-image: linear-gradient(to bottom right, #2f3c4e,#003939);
+     margin: 0;
+}
+.logo{
+     font-size: 40px;
+     color: #fff;
+     background-color: #e46a19;
+     width: 80px;
+     height: 80px;
+     text-align: center;
+     padding: 8px;
+     border-radius: 5px;
+     margin: 10px 60px;
+}
+.container {
+     width: 1000px;
+     max-width: 100%;
+     background-color: #dcefef;
+     margin: 50px auto 0;
+     border-radius: 10px
+}
+.filter {
+     padding: 20px;
+     display: grid;
+     grid-template-columns: 32.66% 32.66% 32.66%;
+     row-gap: 10px;
+     column-gap: 1%;
+}
+.filter .item{
+     background-color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.filter .item select,
+.filter .item input,
+.filter .item button {
+     width: 100%;
+     padding: 5px;
+     border: none;
+     background-color: transparent;
+     border-left: 1px solid #ddd;
+     outline: none;
+}
+.filter .item label {
+     display: block;
+     width: 40%;
+     padding: 0 10px
+}
+.filter .item.submit button {
+     background-color: #0958c6;
+     color: #fff;
+}
+.countResults {
+     font-size: xx-large;
+     text-align: center;
+     padding: 20px;
+}
+.listProducts{
+     padding: 20px;
+     column-gap: 1%;
+     row-gap: 10px;
+     display: grid;
+     grid-template-columns: 32.66% 32.66% 32.66%;
+}
+.listProducts .product img {
+     width: 90%;
+     height: 300px;
+     object-fit: cover;
+     margin: 20px 0;
+     border-radius: 10px;
+}
+.listProducts .product {
+     text-align: center;
+     background-color: #fff5;
+     border-radius: 10px;
+}
+.listProducts .product .title {
+     font-weight: 400;
+     font-size: 19px;
+}
+.listProducts .product .price{
+     color: rgb(255, 66, 78);
+     letter-spacing: 1px;
+     padding: 20px;
+     font-size: 21px;
+}
+.listProducts .product .distCount{
+     color: #808080;
+     margin-left: 5px;
+     text-decoration: line-through;
+     font-size: 17px;
+}
